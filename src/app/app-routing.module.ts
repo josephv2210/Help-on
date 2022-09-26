@@ -2,9 +2,13 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   loadChildren: () => import('./pages/splash/splash.module').then(m => m.SplashPageModule)
+  // },
   {
     path: '',
-    loadChildren: () => import('./common/tabs/tabs.module').then(m => m.TabsPageModule)
+    loadChildren: () => import('./common/tabs/tabs.module').then( m => m.TabsPageModule)
   },
   {
     path: 'login',
@@ -19,37 +23,9 @@ const routes: Routes = [
     loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
   },
   {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: 'search',
-    loadChildren: () => import('./pages/search/search.module').then( m => m.SearchPageModule)
-  },
-  {
-    path: 'create-proyect',
-    loadChildren: () => import('./pages/create-proyect/create-proyect.module').then( m => m.CreateProyectPageModule)
-  },
-  {
     path: 'forgot-password',
     loadChildren: () => import('./pages/auth/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
-  {
-    path: 'user',
-    loadChildren: () => import('./pages/user/user.module').then( m => m.UserPageModule)
-  },
-  {
-    path: 'notification',
-    loadChildren: () => import('./pages/notification/notification.module').then( m => m.NotificationPageModule)
-  },  {
-    path: 'proyect-detail',
-    loadChildren: () => import('./pages/proyect-detail/proyect-detail.module').then( m => m.ProyectDetailPageModule)
-  },
-  {
-    path: 'proyect-filter',
-    loadChildren: () => import('./pages/proyect-filter/proyect-filter.module').then( m => m.ProyectFilterPageModule)
-  },
-
 ];
 @NgModule({
   imports: [

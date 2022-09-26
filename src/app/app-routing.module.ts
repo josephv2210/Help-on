@@ -41,7 +41,15 @@ const routes: Routes = [
   {
     path: 'notification',
     loadChildren: () => import('./pages/notification/notification.module').then( m => m.NotificationPageModule)
+  },  {
+    path: 'proyect-detail',
+    loadChildren: () => import('./pages/proyect-detail/proyect-detail.module').then( m => m.ProyectDetailPageModule)
   },
+  {
+    path: 'proyect-filter',
+    loadChildren: () => import('./pages/proyect-filter/proyect-filter.module').then( m => m.ProyectFilterPageModule)
+  },
+
 ];
 @NgModule({
   imports: [

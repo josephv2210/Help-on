@@ -23,3 +23,20 @@ describe('Tab3Page', () => {
     expect(component).toBeTruthy();
   });
 });
+// import { Component, TemplateRef } from '@angular/core';
+
+// @Component({
+//     selector: 'app-tab3',
+//     templateUrl:  'tab3.page.html',
+//     styles: ['tab3.page.scss'],  
+// })  
+// export class Tab3Page {
+//   constructor() {}
+//   option = {
+//     slidePerView: 1.5,
+//     centeredSlides: true,
+//     loop: true,
+//     spaceBetween: true,
+//   }
+
+// }

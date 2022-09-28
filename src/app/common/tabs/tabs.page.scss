@@ -1,9 +1,18 @@
-.tabs-content{
-    border-radius: 5vw 5vw 0 0;
+.tabs-content {
     background-color: white;
-    
+    border-radius: 5vw 5vw 0 0;
+
+    border-width: 0px;
+    // border-style: none;
+    // border-color: black;
 }
 
-.tabs-content ion-tab-button{
+.tabs-content ion-tab-button {
     background-color: white;
+}
+
+ion-tabs {
+    background-color: #ffffff;
+    border-radius: 5vw 5vw 0 0;
+
 }

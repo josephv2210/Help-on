@@ -13,7 +13,7 @@ const routes: Routes = [
       },
       {
         path: 'search',
-        loadChildren: () => import('../../pages/search/search.module').then(m => m.SearchPageModule)
+        loadChildren: () => import('../../pages/proyect-detail/proyect-detail.module').then(m => m.ProyectDetailPageModule)
       },
       {
         path: 'create-proyect',
@@ -28,15 +28,19 @@ const routes: Routes = [
         loadChildren: () => import('../../pages/user/user.module').then(m => m.UserPageModule)
       },
       {
+        path: 'login',
+        loadChildren: () => import('../../pages/auth/login/login.module').then( m => m.LoginPageModule)
+      },
+      {
         path: '',
-        redirectTo: '/help-On/home',
+        redirectTo: '/help-On/login',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/help-On/home',
+    redirectTo: '/help-On/login',
     pathMatch: 'full'
   }
 ];
